@@ -5,11 +5,14 @@ name: Deploy to GitHub Pages
 
 on:
   push:
-    branches: [ "main" ]
+    branches: ["main"]
 
 jobs:
   build:
     runs-on: ubuntu-latest
+
+    env:
+      NEXT_PUBLIC_BASE_PATH: /personal.portfolio.git
 
     strategy:
       matrix:
