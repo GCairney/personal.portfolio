@@ -12,7 +12,7 @@ jobs:
     runs-on: ubuntu-latest
 
     env:
-      NEXT_PUBLIC_BASE_PATH: /personal.portfolio
+      NEXT_PUBLIC_BASE_PATH: /GCairney.github.io/personal.portfolio
 
     strategy:
       matrix:
