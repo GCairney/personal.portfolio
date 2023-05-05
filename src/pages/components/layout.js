@@ -5,7 +5,7 @@ import utilStyles from '/src/styles/utils.module.css';
 import Link from 'next/link';
 
 const name = 'George Cairney';
-export const siteTitle = 'Next.js Personal Portfolio';
+export const siteTitle = 'Personal Portfolio';
 
 export default function Layout({ children, home }) {
   return (
