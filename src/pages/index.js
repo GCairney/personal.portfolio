@@ -33,15 +33,8 @@ export default function Home({ allPostsData }) {
           height={300}
           alt="alt css"
         />
-      </div>
-      <section className={utilStyles.headingMd}>
-        {/* <p>
-          (This is a sample website - you’ll be building a site like this on{' '}
-          <a href="https://nextjs.org/learn">our Next.js tutorial</a>.)
-        </p> */}
-      </section>
-      
-      <Footer/>
+      </div>      
+      {/* <Footer/> */}
     </Layout>
     
   );
