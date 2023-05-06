@@ -5,16 +5,16 @@ import { getSortedPostsData } from '../../lib/posts';
 import Footer from '../pages/components/footer';
 import Image from 'next/image';
 
-export async function getStaticProps() {
-  const allPostsData = getSortedPostsData();
-  return {
-    props: {
-      allPostsData,
-    },
-  };
-}
+// export async function getStaticProps() {
+//   const allPostsData = getSortedPostsData();
+//   return {
+//     props: {
+//       allPostsData,
+//     },
+//   };
+// }
 
-export default function Home({ allPostsData }) {
+export default function Home({  }) {
   return (
     <Layout home>
       <Head>
@@ -34,7 +34,7 @@ export default function Home({ allPostsData }) {
           alt="alt css"
         />
       </div>      
-      {/* <Footer/> */}
+      
     </Layout>
     
   );
