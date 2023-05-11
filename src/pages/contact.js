@@ -3,7 +3,8 @@ import Layout from "./components/layout";
 
 export default function Contact(){
     return (
-        <Layout>
+        // eslint-disable-next-line react/no-children-prop
+        <Layout children>
             <div>
                 Me!
             </div>

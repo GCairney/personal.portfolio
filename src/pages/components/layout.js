@@ -3,6 +3,8 @@ import Image from 'next/image';
 import styles from '../components/layout.module.css';
 import utilStyles from '/src/styles/utils.module.css';
 import Link from 'next/link';
+import Header from '../components/header';
+
 
 const name = 'George Cairney';
 export const siteTitle = 'Personal Portfolio';
@@ -14,7 +16,7 @@ export default function Layout({ children, home }) {
         <link rel="icon" href="/favicon.ico" />
         <meta
           name="description"
-          content="Learn how to build a personal website using Next.js"
+          content="George Cairney's personal portfolio"
         />
         <meta
           property="og:image"
@@ -25,6 +27,7 @@ export default function Layout({ children, home }) {
         <meta name="og:title" content={siteTitle} />
         <meta name="twitter:card" content="summary_large_image" />
       </Head>
+      <Header/>
       <header className={styles.header}>
         {home ? (
           <>

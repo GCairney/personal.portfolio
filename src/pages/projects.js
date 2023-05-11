@@ -3,7 +3,8 @@ import Layout from "./components/layout";
 
 export default function Projects(){
     return (
-        <Layout>
+        // eslint-disable-next-line react/no-children-prop
+        <Layout children>
             <div>
                 This one
             </div>
