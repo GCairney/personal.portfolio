@@ -11,7 +11,7 @@ export default function Header(){
                     {navLinks.map((link, index) => {
                         return (
                             <ul key={index} >
-                                <Link href={link.path} className="flex items-center justify-center px-3 text-green-400">
+                                <Link href={link.path} className="flex items-center justify-center px-3 text-blue-400">
                                     <li>{link.name}</li>
                                 </Link>
                             </ul>

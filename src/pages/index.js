@@ -34,7 +34,6 @@ export default function Home({  }) {
           alt="alt css"
         />
       </div>      
-      
     </Layout>
   );
 }

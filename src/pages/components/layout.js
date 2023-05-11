@@ -32,14 +32,21 @@ export default function Layout({ children, home }) {
         {home ? (
           <>
             <Image
+              // priority
+              src="/images/homebackground.jpg"
+              className={utilStyles.landingImage}
+              fill
+              alt=""
+            />
+            <Image
               priority
               src="/images/me.jpg"
               className={utilStyles.borderCircle}
-              height={144}
-              width={144}
+              height={288}
+              width={288}
               alt=""
             />
-            <h1 className={utilStyles.heading2Xl}>{name}</h1>
+            <h1 className={utilStyles.heading2Xl} >{name}</h1>
           </>
         ) : (
           <>
@@ -61,7 +68,9 @@ export default function Layout({ children, home }) {
           </>
         )}
       </header>
-      <main>{children}</main>
+      <main>
+            {children}
+      </main>
       {!home && (
         <div className={styles.backToHome}>
           <Link href="/">← Back to home</Link>
