@@ -1,38 +1,31 @@
-import Head from 'next/head';
-import Layout, { siteTitle } from './components/layout';
+import Layout from './components/layout';
 import utilStyles from '../styles/utils.module.css';
-import { getSortedPostsData } from '../../lib/posts';
-import Footer from '../pages/components/footer';
 import Image from 'next/image';
 
-// export async function getStaticProps() {
-//   const allPostsData = getSortedPostsData();
-//   return {
-//     props: {
-//       allPostsData,
-//     },
-//   };
-// }
+const name = 'George Cairney';
 
 export default function Home({  }) {
   return (
     <Layout home>
-      <Head>
-        <title>{siteTitle}</title>
-      </Head>
-      <div class="columns-4">
-        <Image
-          src="/images/laravel.png"
-          width={150}
-          height={150}
-          alt="alt laravel"
-        />
-        <Image
-          src="/images/css.png"
-          width={150}
-          height={150}
-          alt="alt css"
-        />
+      <div className="grid grid-cols-2">
+        <div className="justify-center">
+          <Image
+              priority
+              src="/images/me.jpg"
+              className={utilStyles.borderCircle}
+              height={288}
+              width={288}
+              alt=""
+            />
+        </div>
+        <div>
+          <h1 className={utilStyles.heading2Xl} >{name}</h1>
+          <p className="justify-center">
+            Welcome to my Personal Portfolio! 
+            From work experience to some personal info about me, you can find it all here. 
+            This site is designed to be a snippet of who I am and what I have done so far.
+          </p>
+        </div>
       </div>      
     </Layout>
   );

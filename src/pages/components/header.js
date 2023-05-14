@@ -7,7 +7,7 @@ export default function Header(){
     return (
         <header>
             <div>
-                <nav className="container flex justify-end h-24 px-6 py-2 mx-auto border-b-2 border-spacing-1">
+                <nav className="container flex justify-end h-24 px-6 py-2 mx-auto ">
                     {navLinks.map((link, index) => {
                         return (
                             <ul key={index} >
