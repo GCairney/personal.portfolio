@@ -17,9 +17,7 @@
 }
 
 body {
-  color: rgb(var(--foreground-rgb));
-  background-image: url("../../public/images/homebackground.jpg");
-  background-size: cover;
+  /* color: rgb(var(--foreground-rgb)); */
   /* background: linear-gradient(
       to bottom,
       transparent,
